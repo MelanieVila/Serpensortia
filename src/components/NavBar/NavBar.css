@@ -1,0 +1,23 @@
+nav {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.sombra {
+    -webkit-box-shadow: 6px 0px 28px -6px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 6px 0px 28px -6px rgba(0, 0, 0, 0.51);
+    box-shadow: 6px 0px 28px -6px rgba(0, 0, 0, 0.51);
+}
+
+.logo__imagen {
+    max-width: 10%;
+}
