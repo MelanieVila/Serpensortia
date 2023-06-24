@@ -1,6 +1,6 @@
-import CartWidget from "../CartWidget/CartWidget"
-import logo from "./assets/logo.png"
-import "./NavBar.css"
+import CartWidget from "../CartWidget/CartWidget";
+import logo from "./assets/logo.png";
+import "./NavBar.css";
 
 const NavBar = () => {
     return (
@@ -16,4 +16,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;
