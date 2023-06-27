@@ -1,0 +1,11 @@
+.carrito__cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito__boton {
+    background-color: var(--secundario);
+    border: none;
+    padding: 1rem 1.5rem;
+}

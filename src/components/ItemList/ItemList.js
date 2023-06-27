@@ -1,11 +1,13 @@
 import Item from "../Item/Item";
-import "./ItemList.css";
+import { Container, Row } from 'react-bootstrap';
 
 const ItemList = ({ products }) => {
     return (
-        <div>
-            {products.map(prod => <Item key={prod.id} {...prod} />)}
-        </div>
+        <Container className="text-center">
+            <Row>
+                {products.map(prod => <Item key={prod.id} {...prod} />)}
+            </Row>
+        </Container>
     )
 }
 

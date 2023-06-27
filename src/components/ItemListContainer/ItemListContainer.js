@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../catalogo";
 import ItemList from "../ItemList/ItemList";
-import "./ItemListContainer.css";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = ({ inicio }) => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
@@ -18,9 +17,9 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <div>
-            <h1>{greeting}</h1>
+            <h1>{inicio}</h1>
             <h4>El hechizo invocador de serpientes, <span>Serpensortia</span>, es un hechizo de transformación que conjura una serpiente del extremo de la varita.</h4>
-            <ItemList products={products}/>
+            <ItemList products={products} />
         </div>
     )
 }
