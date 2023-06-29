@@ -6,6 +6,7 @@ nav {
 
 .nav__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
@@ -13,12 +14,14 @@ nav {
     background-color: var(--claro);
 }
 
+@media (min-width: 1050px) {
+    .nav__container {
+        flex-direction: row;
+    }
+}
+
 .sombra {
     -webkit-box-shadow: 6px 0px 28px -6px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 6px 0px 28px -6px rgba(0, 0, 0, 0.51);
     box-shadow: 6px 0px 28px -6px rgba(0, 0, 0, 0.51);
-}
-
-.logo__imagen {
-    max-width: 10%;
 }

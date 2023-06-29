@@ -1,0 +1,15 @@
+.productos__detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos__detalle h3 {
+    margin-top: 1rem;
+}
+
+.productos__detalle img {
+    width: 50%;
+    margin: 2rem 0;
+}

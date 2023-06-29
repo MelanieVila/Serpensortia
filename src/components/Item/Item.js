@@ -1,5 +1,5 @@
-import ItemCount from "../ItemCount/ItemCount";
-import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Col, Button } from 'react-bootstrap';
 import "./Item.css";
 
 const Item = ({ id, nombre, img, precio }) => {
@@ -10,7 +10,7 @@ const Item = ({ id, nombre, img, precio }) => {
             <h4>${precio}</h4>
 
             <div className="productos__detalle">
-                <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)} />
+                <Button as={Link} to={`/item/${id}`}>Ver detalle</Button>
             </div>
         </Col>
     )
