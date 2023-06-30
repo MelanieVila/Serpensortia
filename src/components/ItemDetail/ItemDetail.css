@@ -9,7 +9,7 @@
     margin-top: 1rem;
 }
 
-.productos__detalle img {
-    width: 50%;
+.productos__imagen {
+    width: 40vh;
     margin: 2rem 0;
 }
