@@ -24,7 +24,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 <h4 className="p-3">{quantity}</h4>
                 <Button onClick={increment} size="lg" className="carrito__boton">+</Button>
             </div>
-            <Button onClick={() => onAdd(quantity)} disabled={!stock} size="lg" className="carrito__boton text-uppercase">Agregar al carrito</Button>
+            <Button onClick={() => onAdd(quantity)} size="lg" className="carrito__boton text-uppercase">Agregar al carrito</Button>
         </div>
     )
 }
