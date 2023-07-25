@@ -32,9 +32,9 @@ export const CartProvider = ({ children }) => {
         }
     }
 
-    const removeProduct = (productId) => {
-        const productDelete = cart.find(prod => prod.id === productId)
-        const cartUpdated = cart.filter(prod => prod.id !== productId)
+    const removeProduct = (id) => {
+        const productDelete = cart.find(prod => prod.product.id === id)
+        const cartUpdated = cart.filter(prod => prod.product.id !== id)
         setCart(cartUpdated)
         setTotalQuantity(prev => prev - productDelete.quantity);
         setTotal(prev => prev - (productDelete.product.precio * productDelete.quantity));

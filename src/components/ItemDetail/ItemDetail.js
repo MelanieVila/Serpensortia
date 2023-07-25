@@ -7,13 +7,13 @@ import './ItemDetail.css';
 const ItemDetail = ({ id, nombre, img, precio, stock }) => {
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-    const { addItem } = useContext(CartContext)
+    const { addProduct } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
 
         const item = { id, nombre, precio }
-        addItem(item, quantity)
+        addProduct(item, quantity)
     }
 
     return (

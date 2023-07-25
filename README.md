@@ -28,6 +28,7 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
     │   ├── CartItem
     │   │   └── CartItem.js
     │   ├── CartWidget
+    │   │   ├── CartWidget.css
     │   │   └── CartWidget.js
     │   ├── Item
     │   │   ├── Item.css
@@ -46,11 +47,11 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
     │   │   └── ItemList.js
     │   ├── ItemListContainer
     │   │   └── ItemListContainer.js
-    │   ├── Navbar
-    │   │   ├── Navbar.css
-    │   │   ├── Navbar.js
-    │   │   └── assets
-    │   │       └── Logo.png
+    │   └── Navbar
+    │       ├── Navbar.css
+    │       ├── Navbar.js
+    │       └── assets
+    │           └── Logo.png
     ├── context
     │   └── CartContext.js
     └── index.js

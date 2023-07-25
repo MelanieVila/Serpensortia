@@ -14,6 +14,7 @@ const NavBar = () => {
                 <div className="nav__enlaces">
                     <NavLink to={"/category/sueter"}>Suéteres</NavLink> ♦ <NavLink to={"/category/bufanda"}>Bufandas</NavLink> ♦ <NavLink to={"/category/tunica"}>Túnicas</NavLink> ♦ <NavLink to={"/category/corbata"}>Corbatas</NavLink> ♦ <NavLink to={"/category/varita"}>Varitas</NavLink>
                 </div>
+
                 <div><CartWidget /></div>
             </div>
         </nav>
