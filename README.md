@@ -26,6 +26,7 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
     │   ├── Cart
     │   │   └── Cart.js
     │   ├── CartItem
+    │   │   ├── CartItem.css
     │   │   └── CartItem.js
     │   ├── CartWidget
     │   │   ├── CartWidget.css
@@ -54,7 +55,9 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
     │           └── Logo.png
     ├── context
     │   └── CartContext.js
-    └── index.js
+    ├── index.js
+    └── services
+        └── config.js
 ```
 
 # Tech :computer:

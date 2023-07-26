@@ -1,0 +1,37 @@
+.carrito__container {
+    max-width: 100rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    background: linear-gradient(150deg, rgba(250,250,250,1) 49%, rgba(0,119,182,0.4290091036414566) 100%);
+    border-radius: 1.5rem;
+    -webkit-box-shadow: -10px 10px 36px -10px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: -10px 10px 36px -10px rgba(0, 0, 0, 0.59);
+    box-shadow: -10px 10px 36px -10px rgba(0, 0, 0, 0.59);
+}
+
+.carrito__titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.carrito__finalizar {
+    text-align: end;
+}
+
+.carrito__finalizar button {
+    margin: 0 .2rem;
+    padding: .2rem 1rem;
+}
+
+.carrito__vacio {
+    text-align: center;
+}
+
+.carrito__vacio button {
+    padding: .2rem 1rem;
+}
+
+.carrito__vacio h1 {
+    margin: 0 0 2rem 0;
+}

@@ -1,0 +1,14 @@
+.carrito__productos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: var(--oscuro);
+}
+
+.carrito__productos img {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 75%;
+    background-image: url("../Item/assets/BackgroundProductos.png");
+}

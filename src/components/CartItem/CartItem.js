@@ -1,16 +1,20 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
+import './CartItem.css';
 
-const CartItem = ({ product, quantity, nombre, precio, img }) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+
+const CartItem = ({ id, quantity, nombre, precio, img }) => {
     const { removeProduct } = useContext(CartContext)
 
     return (
-        <div>
+        <div className="carrito__productos">
+            <img src={img} alt={nombre} />
             <h4>{nombre}</h4>
+            <p>${precio}</p>
             <p>Cantidad: {quantity}</p>
-            <p>Precio: ${precio}</p>
-            <img src={img} alt={nombre}/>
-            <button onClick={() => removeProduct(product.id)}>Eliminar</button>
+            <button onClick={() => removeProduct(id)}><FontAwesomeIcon icon={faTrashCan} /></button>
         </div>
     )
 }
