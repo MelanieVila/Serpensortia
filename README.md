@@ -32,6 +32,9 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
     │   ├── CartWidget
     │   │   ├── CartWidget.css
     │   │   └── CartWidget.js
+    │   ├── Checkout
+    │   │   ├── Checkout.css
+    │   │   └── Checkout.js
     │   ├── Item
     │   │   ├── Item.css
     │   │   ├── Item.js
@@ -68,4 +71,4 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
 - React JS
 - Bootstrap
 - Firebase
-- Github
+- GitHub
