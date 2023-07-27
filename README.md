@@ -24,6 +24,7 @@ Las imágenes de los productos fueron extraídas de la Tienda Oficial <a href="h
     ├── catalogo.js
     ├── components
     │   ├── Cart
+    │   │   ├── Cart.css
     │   │   └── Cart.js
     │   ├── CartItem
     │   │   ├── CartItem.css
