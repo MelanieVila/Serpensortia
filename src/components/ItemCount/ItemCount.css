@@ -3,8 +3,3 @@
     align-items: center;
     justify-content: center;
 }
-
-.carrito__boton {
-    background-color: var(--secundario);
-    border: none;
-}

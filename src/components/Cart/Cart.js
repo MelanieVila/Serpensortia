@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
 import CartItem from "../CartItem/CartItem";
 import './Cart.css';
 
@@ -9,9 +10,9 @@ const Cart = () => {
 
     if (totalQuantity === 0) {
         return (
-            <div className="carrito__vacio text-center">
+            <div className="text-center">
                 <h1 className="mb-4">El carrito está vacío</h1>
-                <button><Link to="/">Volver a la tienda</Link></button>
+                <Button as={Link} to={"/"} className="btn btn-light btn-outline-dark btn-lg py-3 px-4">Volver a la tienda</Button>
             </div>
         )
     }
@@ -21,10 +22,10 @@ const Cart = () => {
             <p className="carrito__titulo text-center">Carrito</p>
             {cart.map(product => <CartItem key={product.id} {...product} />)}
             <hr />
-            <div className="carrito__finalizar text-end">
+            <div className="text-end">
                 <p>Total: ${total}</p>
-                <button><Link onClick={() => clearCart()}>Vaciar carrito</Link></button>
-                <button><Link to="/checkout">Finalizar compra</Link></button>
+                <Button onClick={() => clearCart()} className="btn btn-dark btn-lg py-3 px-4">Vaciar carrito</Button>
+                <Button as={Link} to={"/checkout"} className="btn btn-dark btn-lg py-3 px-4">Finalizar compra</Button>
             </div>
         </div>
     )

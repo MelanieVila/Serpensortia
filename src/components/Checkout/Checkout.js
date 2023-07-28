@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import { Button } from 'react-bootstrap';
 import { CartContext } from "../../context/CartContext";
 import './Checkout.css';
 
@@ -67,10 +68,10 @@ const Checkout = () => {
     }
 
     return (
-        <div className="form__container">
+        <div className="form__container my-0 mx-auto text-center">
             <h2>Checkout</h2>
 
-            <div className="ticket">
+            <div className="ticket my-5 mx-auto">
                 <div class="ticket__checkout">
                     <header class="ticket__wrapper">
                         <div class="ticket__header">
@@ -100,34 +101,34 @@ const Checkout = () => {
             <h4>Completa los siguientes campos para finalizar tu compra</h4>
 
             <form onSubmit={handleOnForm}>
-                <div className="form__label">
+                <div className="my-4 mx-auto">
                     <label for="Nombre"></label>
                     <input type="text" placeholder="Nombre" value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
 
-                <div className="form__label">
+                <div className="my-4 mx-auto">
                     <label for="Apellido"></label>
                     <input type="text" placeholder="Apellido" value={lastName} onChange={(e) => setLastName(e.target.value)} />
                 </div>
 
-                <div className="form__label">
+                <div className="my-4 mx-auto">
                     <label for="Teléfono"></label>
                     <input type="text" placeholder="Teléfono" value={telephone} onChange={(e) => setTelephone(e.target.value)} />
                 </div>
 
-                <div className="form__label">
+                <div className="my-4 mx-auto">
                     <label for="Email"></label>
                     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
-                <div className="form__label">
+                <div className="my-4 mx-auto">
                     <label for="Confirma tu email"></label>
                     <input type="email" placeholder="Confirma tu email" value={emailConfirmation} onChange={(e) => setEmailConfirmation(e.target.value)} />
                 </div>
 
                 {error && <p className="text-danger">{error}</p>}
 
-                <button type="submit">Finalizar compra</button>
+                <Button type="submit" className="form__button btn btn-light btn-outline-dark btn-lg py-3 px-4">Finalizar compra</Button>
             </form>
 
             {orderId && (<h3>¡Gracias por tu compra! Tu número de orden es {orderId}</h3>)}

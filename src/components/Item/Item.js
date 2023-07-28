@@ -9,7 +9,7 @@ const Item = ({ id, nombre, img, precio }) => {
             <img src={img} alt={nombre} className="productos__imagen" />
             <h4>${precio}</h4>
 
-            <Button as={Link} to={`/item/${id}`} className="productos__detalle">Ver detalle</Button>
+            <Button as={Link} to={`/item/${id}`} className="btn btn-light btn-outline-dark btn-lg py-3 px-4">Ver detalle</Button>
         </Col>
     )
 }
