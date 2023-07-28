@@ -4,14 +4,12 @@ import "./Item.css";
 
 const Item = ({ id, nombre, img, precio }) => {
     return (
-        <Col lg={4} sm={6} className="productos__container">
+        <Col lg={4} sm={6} className="py-5">
             <h3>{nombre}</h3>
             <img src={img} alt={nombre} className="productos__imagen" />
             <h4>${precio}</h4>
 
-            <div className="productos__detalle">
-                <Button as={Link} to={`/item/${id}`}>Ver detalle</Button>
-            </div>
+            <Button as={Link} to={`/item/${id}`} className="productos__detalle">Ver detalle</Button>
         </Col>
     )
 }

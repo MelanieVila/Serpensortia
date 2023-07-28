@@ -1,4 +1,5 @@
 .form__container {
+    font-family: 'Ysabeau SC', sans-serif;
     max-width: 120rem;
     margin: 0 auto;
     text-align: center;
@@ -6,4 +7,58 @@
 
 .form__label label {
     margin: 2rem auto;
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--oscuro);
+    background-color: var(--claro);
+    margin: 3rem 0;
+}
+
+.ticket__checkout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-width: 35rem;
+}
+
+.ticket__header,
+.ticket__body,
+.ticket__footer {
+    padding: 1.25rem;
+    background-color: var(--claro);
+    border: 1px solid var(--oscuro);
+    box-shadow: 0 2px 4px var(--oscuro);
+}
+
+.ticket__header {
+    border-top: 0.4rem solid var(--secundario);
+    border-bottom: 2px dashed var(--claro);
+    box-shadow: none;
+    border-radius: 0 0 .4rem .4rem;
+}
+
+.ticket__wrapper {
+    box-shadow: 0 2px 4px var(--oscuro);
+    border-radius: .4rem .4rem 0 0;
+    overflow: hidden;
+}
+
+.ticket__body {
+    border-bottom: none;
+    border-top: 1px solid var(--claro);
+}
+
+.ticket__header,
+.ticket__footer {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket__footer {
+    border-top: 2px dashed var(--claro);
+    border-radius: 0 0 .4rem .4rem;
 }

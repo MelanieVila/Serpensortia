@@ -64,24 +64,42 @@ const Checkout = () => {
             .catch((error) => {
                 setError("No se puede actualizar el stock", error)
             })
-
     }
 
     return (
         <div className="form__container">
             <h2>Checkout</h2>
-            <form onSubmit={handleOnForm}>
-                {
-                    cart.map(product => (
-                        <div key={product.id}>
-                            <p>{product.quantity}x {product.nombre}</p>
-                            <p>${product.precio} por unidad</p>
-                        </div>
-                    ))
-                }
-                <p>Total a pagar: ${total}</p>
-                <hr />
 
+            <div className="ticket">
+                <div class="ticket__checkout">
+                    <header class="ticket__wrapper">
+                        <div class="ticket__header">
+                            Ticket de compra ⚡
+                        </div>
+                    </header>
+                    <div class="ticket__body">
+                        {
+                            cart.map(product => (
+                                <section class="ticket__section" key={product.id}>
+                                    <h3>{product.nombre}</h3>
+                                    <p>Cantidad: {product.quantity}</p>
+                                    <p>${product.precio} por unidad</p>
+                                </section>
+                            ))
+                        }
+                    </div>
+                    <div class="ticket__footer">
+                        <span>Total a pagar:</span>
+                        <span>${total}</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <h4>Completa los siguientes campos para finalizar tu compra</h4>
+
+            <form onSubmit={handleOnForm}>
                 <div className="form__label">
                     <label for="Nombre"></label>
                     <input type="text" placeholder="Nombre" value={name} onChange={(e) => setName(e.target.value)} />
@@ -112,7 +130,7 @@ const Checkout = () => {
                 <button type="submit">Finalizar compra</button>
             </form>
 
-            {orderId && (<h3>¡Gracias por tu compra! Tu número de orden es {orderId}.</h3>)}
+            {orderId && (<h3>¡Gracias por tu compra! Tu número de orden es {orderId}</h3>)}
         </div>
     )
 }

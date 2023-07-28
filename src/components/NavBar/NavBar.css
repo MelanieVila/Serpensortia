@@ -1,16 +1,8 @@
-nav {
-    width: 65%;
-    margin: 0 auto;
-    padding-top: 1rem;
-}
-
 .nav__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    border-radius: 1.5rem;
     background-color: var(--claro);
 }
 

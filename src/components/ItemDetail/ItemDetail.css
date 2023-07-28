@@ -5,11 +5,6 @@
     justify-content: center;
 }
 
-.productos__detalle h3 {
-    margin-top: 1rem;
-}
-
 .productos__imagen {
     width: 40vh;
-    margin: 2rem 0;
 }

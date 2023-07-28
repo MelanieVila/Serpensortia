@@ -1,14 +1,9 @@
-.productos__container {
-    margin: 5rem 0;
-}
-
 .productos__imagen {
     background-image: url("./assets/BackgroundProductos.png");
-    width: 65%;
-    border-radius: 14px 14px 14px 14px;
-    -moz-border-radius: 14px 14px 14px 14px;
-    -webkit-border-radius: 14px 14px 14px 14px;
-    border: 2px dotted #9B9A95;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border: .2rem dotted #9B9A95;
 }
 
 .productos__detalle {

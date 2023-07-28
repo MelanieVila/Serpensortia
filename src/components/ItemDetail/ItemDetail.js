@@ -17,15 +17,15 @@ const ItemDetail = ({ id, nombre, img, precio, stock }) => {
     }
 
     return (
-        <div className='productos__detalle my-0 mx-auto'>
+        <div className="productos__detalle my-0 mx-auto">
             <h2>{nombre}</h2>
-            <h3>${precio}</h3>
-            <img src={img} alt={nombre} className="productos__imagen" />
+            <h3 className="mt-3">${precio}</h3>
+            <img src={img} alt={nombre} className="productos__imagen my-4" />
 
             <div>
                 {
                     quantityAdded > 0 ? (
-                        <Link to='/cart'>Terminar compra</Link>
+                        <Link to="/cart">Terminar compra</Link>
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                     )

@@ -5,8 +5,8 @@ import "./NavBar.css";
 
 const NavBar = () => {
     return (
-        <nav>
-            <div className="nav__container sombra">
+        <nav className="my-0 mx-auto pt-3 w-75">
+            <div className="nav__container sombra px-4 py-4 rounded-5">
                 <Link to="/">
                     <img src={logo} className="logo__imagen" alt="Logo" />
                 </Link>
